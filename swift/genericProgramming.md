@@ -39,12 +39,12 @@ func basicGeneric4<C: Collection, D: Collection>(_ value1: C, _ value2: D) where
 class C1 {}
 class C2 {}
 
-// place holder can only constrain to one class, even if the other protocol has no class requirement
+// ❌, place holder can only constrain to one class, even if the other protocol has no class requirement
 func generic<T: C2 & C1> (_ value: T) {
                      `- error: protocol-constrained type cannot contain class 'C1' because it already contains class 'C2'
 }
 
-// ok
+// ✅
 func generic<T: C2 & CustomStringConvertible> (_ value: T) {
     // ...
 }
