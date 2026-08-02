@@ -1,7 +1,6 @@
 # Ling Ho's Blog
 
-* [Optional chaining Trick](./swift/optionalChainTrick.md)
-* [[WIP] Generic programming](./swift/genericProgramming.md)
+* [Not returning to the main thread on linux](./swift/notReturningToMainThread.md)
 
 <br>
 
